@@ -1,0 +1,63 @@
+# Build artifacts and private directories #
+###########################################
+build/
+devel/
+*.catkin_tools/
+
+# Ignore package-specific build directories #
+#############################################
+**/build/
+**/devel/
+
+# Compiled object files, static and dynamic libraries #
+########################################################
+*.o
+*.so
+*.dylib
+*.dll
+
+# Temporary Files #
+####################
+*~
+*.swp
+.DS_Store
+Thumbs.db
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+
+# CMake and Make #
+##################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Logs and databases #
+######################
+*.log
+*.db
+*.sqlite
+
+# Gazebo #
+##########
+*.state
+*.ini
+
+# ROS #
+#######
+*.bag
+*.bag.active
+*.bag.index
+
+# Editor and IDE specific #
+###########################
+.vscode/
+.idea/
+*.sublime-*
+*.project
+*.workspace
+*.user
+*.launch

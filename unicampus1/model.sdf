@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<!-- SDF file that defines the model for Gazebo. -->
+<sdf version='1.6'>
+  <model name='unicampus1'>
+    <!-- Flag to set the model as static (it does not move). -->
+    <static>true</static>
+    <!-- The link element defines a physical part of the model. -->
+    <link name='link'>
+      <!-- Collision properties for the model. Defines the geometry used for collision detection. -->
+      <collision name='collision'>
+        <geometry>
+          <!-- Mesh geometry that references the COLLADA file for collision shapes. -->
+          <mesh>
+            <!-- URI to the COLLADA file relative to the GAZEBO_MODEL_PATH. -->
+            <uri>model://unicampus1/meshes/city.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- Visual properties of the model. Defines how the model looks. -->
+      <visual name='visual'>
+        <geometry>
+          <!-- Mesh geometry that references the COLLADA file for the visual representation. -->
+          <mesh>
+            <!-- Again, URI to the COLLADA file relative to the GAZEBO_MODEL_PATH. -->
+            <uri>model://unicampus1/meshes/city.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

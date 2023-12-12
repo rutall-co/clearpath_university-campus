@@ -1,0 +1,43 @@
+</sdf>
+<?xml version="1.0" ?>
+<!-- XML declaration and start of the SDF (Simulation Description Format) file. -->
+
+<sdf version="1.6">
+  <!-- SDF version used. Ensure this version is compatible with your Gazebo installation. -->
+
+  <world name="unicampus1_world">
+    <!-- The 'world' tag defines a new simulation environment named 'unicampus1_world'. -->
+
+    <!-- Include the unicampus1 model -->
+    <include>
+      <uri>model://unicampus1</uri>
+      <!-- The 'uri' attribute points to the unicampus1 model. Ensure the model is correctly placed in Gazebo's model directory. -->
+    </include>
+
+    <!-- Sun for lighting -->
+    <include>
+      <uri>model://sun</uri>
+      <!-- Including the 'sun' model for natural lighting. Adjusting light properties can improve the realism of the simulation. -->
+    </include>
+
+    <!-- Ground plane for terrain -->
+    <include>
+      <uri>model://ground_plane</uri>
+      <!-- The 'ground_plane' provides a basic flat surface for the simulation. It's essential for ground-based robots like Jackal. -->
+    </include>
+
+    <!-- Additional elements like buildings, trees, or other robots can be added here. -->
+
+    <!-- Physics properties -->
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <!-- These settings define the physics engine behavior. 'ode' is a common choice. Adjust these for simulation accuracy and performance. -->
+    </physics>
+
+    <!-- Ambient lighting -->
+    <ambient>0.6 0.6 0.6 1</ambient>
+    <!-- Defines the ambient light in the world. Adjust the RGBA values for different lighting effects. -->
+  </world>
+</sdf>
