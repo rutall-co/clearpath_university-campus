@@ -57,6 +57,9 @@ Integrate custom models into your Gazebo simulations by following these steps:
 ### Launching the Simulation
 Start the simulation by executing these commands:
 1. **Gazebo World Launch**:
+
+ ![Alt text](Readme/uniCampus3dgazebo.gif)
+
  Initiate the Unicampus Gazebo world along with the Jackal robot:
  ```bash
  export JACKAL_LASER=1
@@ -67,17 +70,7 @@ Start the simulation by executing these commands:
  ```bash
  roslaunch jackal_viz view_robot.launch
  ```
-### Repository Structure
-- `src`: Contains ROS packages crucial for simulation.
-- `models`: Custom Gazebo models designed for the Unicampus world.
-### Contributing to the Project
-Your contributions to this project are highly appreciated. To contribute:
-1. Fork the repository.
-2. Make your changes or enhancements.
-3. Submit a pull request for review.
-### License
-This project is licensed under the MIT License. For more details, refer to the LICENSE file in this
-repository.
+
 ### Optional: Installing teleop_twist_keyboard
 For enhanced control of your robot in the simulation, you may opt to install the
 `teleop_twist_keyboard` package. This package allows you to control the robot's movement using
@@ -91,22 +84,17 @@ sudo apt-get update
 #### Install the teleop_twist_keyboard Package
 Depending on your version of ROS, use one of the following commands:
 - For ROS Melodic or Noetic:
- ```bash
- sudo apt-get install ros-melodic-teleop-twist-keyboard
- ```
- or
+
  ```bash
  sudo apt-get install ros-noetic-teleop-twist-keyboard
  ```
-- For ROS Kinetic:
- ```bash
- sudo apt-get install ros-kinetic-teleop-twist-keyboard
- ```
-#### Using the teleop_twist_keyboard Package
+
+##### Using the teleop_twist_keyboard Package
 Once the installation is complete, you can launch the keyboard teleoperation interface:
 ```bash
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+ ![Alt text](Readme/keyboardcontrol.gif)
 
 Make sure you have the ROS environment properly sourced in your terminal before running the
 `rosrun` command.
@@ -142,6 +130,8 @@ Visualize the AMCL localization in RViz:
 ```bash
 rviz roslaunch jackal_viz view_robot.launch config:=localization
 ```
+ ![Alt text](Readme/amcl.gif)
+
 Each of these commands launches different aspects of the robot's navigation capabilities, allowing
 for experimentation and learning in various scenarios. Ensure that you have the necessary
 packages and configurations set up as per the earlier sections of this guide.
