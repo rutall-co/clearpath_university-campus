@@ -60,4 +60,4 @@ Makefile
 *.project
 *.workspace
 *.user
-*.launch
+

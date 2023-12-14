@@ -1,0 +1,26 @@
+<!-- This launch file is used to start a Gazebo simulation with a custom world and the Jackal robot. -->
+
+<launch>
+  
+    <!-- Include the empty world from the gazebo_ros package. This provides the necessary Gazebo infrastructure, -->
+    <!-- such as physics properties and environment settings, without any additional models or objects. -->
+    <arg name="world_path" default="/home/ub/.gazebo/models/unicampus1/unicampus1.world"/>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <!-- The world_name argument specifies the path to your custom world file. -->
+      <!-- Replace 'unicampus1' with the actual directory name if different. -->
+      <arg name="world_name" value="$(arg world_path)"/>
+    </include>
+  
+    <!-- Spawn the Jackal robot in the simulation using the spawn_jackal.launch file from the jackal_gazebo package. -->
+    <!-- This approach allows you to easily add the Jackal robot to your custom Gazebo world. -->
+    <include file="$(find jackal_gazebo)/launch/spawn_jackal.launch">
+      <!-- The following arguments set the initial position (x, y, z) and orientation (yaw) for the Jackal robot. -->
+      <!-- These values can be adjusted to change where and how the Jackal appears in the world. -->
+      <arg name="x" value="0"/> <!-- Replace with the desired X coordinate -->
+      <arg name="y" value="0"/> <!-- Replace with the desired Y coordinate -->
+      <arg name="z" value="0"/> <!-- Replace with the desired Z coordinate (height) -->
+      <arg name="yaw" value="0"/> <!-- Replace with the desired yaw (rotation around the Z axis) -->
+    </include>
+  
+  </launch>
+  
