@@ -45,7 +45,7 @@ Also, in the repository, there is a file named `launch`. You must run the follow
 ```bash
 catkin_create_pkg unicampus rospy roscpp
 ```
-Then, place the `launch` file inside the new directory if it is not created.
+Then, place the `launch` folder in inside the new directory `src/unicampus` if it is not alredy there.
 ### Adding Custom Models to Gazebo
 Integrate custom models into your Gazebo simulations by following these steps:
 1. **Model Transfer**:
