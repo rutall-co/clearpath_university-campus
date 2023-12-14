@@ -1,13 +1,27 @@
+Unicampus Gazebo Simulation with Jackal Robot
 # Unicampus Gazebo Simulation with Jackal Robot
 ## Overview
-Welcome to the Unicampus Gazebo Simulation repository! This comprehensive guide is designed to help y
+Welcome to the Unicampus Gazebo Simulation repository! This comprehensive guide is designed to
+help y
 ## Custom Gazebo World and Models
-In this section, you will find detailed instructions on accessing and utilizing the custom models and ROS (R
+In this section, you will find detailed instructions on accessing and utilizing the custom models and
+ROS (R
 ### Prerequisites
 To ensure a smooth setup, please have the following prerequisites installed:
-- **ROS (Kinetic, Melodic, or Noetic)**: ROS is an essential framework for robot software development, pro
-- **Gazebo**: A versatile 3D simulation environment that allows you to accurately and efficiently simulate y
-- **Jackal Simulation Packages**: These are specialized ROS packages tailored for simulating the Jackal r
+- **ROS (Kinetic, Melodic, or Noetic)**: ROS is an essential framework for robot software
+development, pro
+- **Gazebo**: A versatile 3D simulation environment that allows you to accurately and efficiently
+simulate y
+- **Jackal Simulation Packages**: These are specialized ROS packages tailored for simulating the
+Jackal r
+### Prerequisites
+To ensure a smooth setup, please have the following prerequisites installed:
+- **ROS (Kinetic, Melodic, or Noetic)**: ROS is an essential framework for robot software
+development, providing libraries and tools to help software developers create robot applications.
+- **Gazebo**: A versatile 3D simulation environment that allows you to accurately and efficiently
+simulate your robot in complex environments.
+- **Jackal Simulation Packages**: These are specialized ROS packages tailored for simulating the
+Jackal robot, including its dynamics and sensor suite.
 ### Installation Guide
 Follow these steps to set up your simulation environment:
 1. **Repository Cloning**:
@@ -15,7 +29,6 @@ Clone the repository to your local machine:
 ```bash
 git clone git@github.com:wlaa41/clearpath_university-campus.git
 ```
-
 2. **Building the Workspace**:
 Navigate to your workspace and compile the ROS packages:
 ```bash
@@ -28,6 +41,11 @@ Source the ROS environment to make the packages available in your current sessio
 ```bash
 source devel/setup.bash
 ```
+Also, in the repository, there is a file named `launch`. You must run the following command:
+```bash
+catkin_create_pkg unicampus rospy roscpp
+```
+Then, place the `launch` file inside the new directory if it is not created.
 ### Adding Custom Models to Gazebo
 Integrate custom models into your Gazebo simulations by following these steps:
 1. **Model Transfer**:
@@ -46,15 +64,16 @@ Start the simulation by executing these commands:
 1. **Gazebo World Launch**:
 Initiate the Unicampus Gazebo world along with the Jackal robot:
 ```bash
+export JACKAL_LASER=1
 roslaunch unicampus unicampus.launch
 ```
 2. **RViz Visualization**:
 To visualize the robot and its sensor data in RViz:
 ```bash
-export JACKAL_LASER=1
 roslaunch jackal_viz view_robot.launch
 ```
-For an in-depth guide on customizing your simulation environment and additional simulation worlds, refer to
+For an in-depth guide on customizing your simulation environment and additional simulation worlds,
+refer to
 ### Repository Structure
 - `src`: Contains ROS packages crucial for simulation.
 - `models`: Custom Gazebo models designed for the Unicampus world.
@@ -64,4 +83,5 @@ Your contributions to this project are highly appreciated. To contribute:
 2. Make your changes or enhancements.
 3. Submit a pull request for review.
 ### License
-This project is licensed under the MIT License. For more details, refer to the LICENSE file in this repository
+This project is licensed under the MIT License. For more details, refer to the LICENSE file in this
+repository
