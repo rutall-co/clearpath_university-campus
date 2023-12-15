@@ -7,6 +7,9 @@ specifically tailored for educational and research purposes.
 ## Custom Gazebo World and Models
 In this section, you will find detailed instructions on accessing and utilizing the custom models and
 ROS packages developed for the Unicampus Gazebo simulation.
+
+ ![Alt text](Readme/citygoogle.png)
+
 ### Prerequisites
 To ensure a smooth setup, please have the following prerequisites installed:
 - **ROS (Kinetic, Melodic, or Noetic)**: ROS is an essential framework for robot software
@@ -42,6 +45,8 @@ catkin_create_pkg unicampus rospy roscpp
 Then, place the `launch` file inside the new directory if it is not created.
 ### Adding Custom Models to Gazebo
 Integrate custom models into your Gazebo simulations by following these steps:
+
+ ![Alt text](Readme/ske.gif)
 
 1. **Model Transfer**:
  Copy the `models` folder from the repository to your Gazebo model directory:
