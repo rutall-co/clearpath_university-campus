@@ -29,6 +29,7 @@ Follow these steps to set up your simulation environment:
 2. **Building the Workspace**:
  Navigate to your workspace and compile the ROS packages:
  ```bash
+ mkdir ~/Document/clearpath1
  cd ~/Documents/clearpath1
  catkin_make
  ```
