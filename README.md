@@ -230,3 +230,31 @@ Your contributions to this project are highly appreciated. To contribute:
 3. Submit a pull request for review.
 ### License
 This project is licensed under the MIT License. For more details, refer to the LICENSE file in this repository
+
+
+
+
+
+
+
+
+
+
+
+<p align="center">
+  <span style="font-size: 20px; font-weight: bold;">From <i>\( \pi \)</i> to <i>\( \phi \)</i>, in the algorithmic sky</span><br>
+  <span style="font-size: 24px; font-weight: bold;">Our robot does fly</span>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
