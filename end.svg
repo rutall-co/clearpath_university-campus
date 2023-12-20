@@ -4,7 +4,7 @@
     .heavy { font:bold 24px sans-serif; }
     .italic { font:italic 20px sans-serif; }
   </style>
-  <text x="50%" y="50" class="italic" text-anchor="middle">From &pi; to &phi;,</text>
+  <text x="50%" y="50" class="italic" text-anchor="middle">From</text>
   <text x="50%" y="70" class="heavy" text-anchor="middle">in the algorithmic sky 🚀</text>
   <text x="50%" y="90" class="heavy" text-anchor="middle">OUR ROBOT DOES FLY</text>
 </svg>
