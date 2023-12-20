@@ -10,15 +10,19 @@ ROS packages developed for the Unicampus Gazebo simulation.
 
  ![Alt text](Readme/citygoogle.png)
 
-### Prerequisites
+### PREREQUISITES
 To ensure a smooth setup, please have the following prerequisites installed:
-- **ROS (Kinetic, Melodic, or Noetic)**: ROS is an essential framework for robot software
-development, providing libraries and tools to help software developers create robot applications.
-- **Gazebo**: A versatile 3D simulation environment that allows you to accurately and efficiently
-simulate your robot in complex environments.
-- **Jackal Simulation Packages**: These are specialized ROS packages tailored for simulating the
-Jackal robot, including its dynamics and sensor suite.
-### Installation Guide
+
+**- ROS (Robot Operating System):**
+ROS is an open-source framework for building and controlling robots. It offers tools, libraries, and conventions to develop robotic software. The versions (Kinetic, Melodic, or Noetic) represent different releases, each with unique features and compatibility.
+
+**- Gazebo (3D Simulation Environment):**
+Gazebo is a robust simulation tool providing a lifelike 3D environment for testing robots and systems. It enables developers to validate algorithms in a simulated world before deploying them on a physical robot. Often used with ROS, Gazebo facilitates comprehensive robot simulations.
+
+**- Jackal Simulation Packages:**
+These packages are tailored for simulating the Jackal robot in ROS. They include models replicating Jackal's dynamics and sensors. Developers use these packages to simulate Jackal's movement, interactions, and sensor readings in Gazebo's virtual environment.
+
+### INSTALLATION GUIDE
 Follow these steps to set up your simulation environment:
 1. **Repository Cloning**:
  Clone the repository to your local machine:
@@ -27,24 +31,28 @@ Follow these steps to set up your simulation environment:
  git clone git@github.com:wlaa41/clearpath_university-campus.git
  ```
 2. **Building the Workspace**:
- Navigate to your workspace and compile the ROS packages:
+Navigate to your ROS workspace with `cd` and organize your robot tools (ROS packages) using `catkin_make`. It's like setting up a toolbox back in home – by doing this, you ensure everything works smoothly and in order when you run simulations or control your robot. 
  ```bash
  mkdir ~/Document/clearpath1
  cd ~/Documents/clearpath1
  catkin_make
  ```
- This command builds all the necessary components for the simulation.
 3. **Environment Setup**:
- Source the ROS environment to make the packages available in your current session:
+Imagine you're getting ready to work on a project, and you need to set up your work area. This command is like turning on the lights and making sure everything is in the right place. It helps your computer know where to find the tools (ROS packages) you just organized, so when you run your robot simulation or do any work, everything runs smoothly.
  ```bash
  source devel/setup.bash
  ```
-Also, in the repository, there is a file named `launch`. You must run the following command:
+Also, in the repository, there's a file named `launch`. Follow these steps to set up the ROS package:
+
+Open a terminal and navigate to your ROS workspace.Run the following command to create a ROS package named "unicampus" with necessary dependencies:
 ```bash
 catkin_create_pkg unicampus rospy roscpp
 ```
-Then, place the `launch` file inside the new directory if it is not created.
-### Adding Custom Models to Gazebo
+Ensure the existence of the `launch`  directory within the `unicampus` package. If not, create it and place the launch file inside. This file holds configurations for launching nodes in the Unicampus Gazebo Simulation, completing the ROS package setup for simulation control.
+
+In ROS, think of a **node** like a small worker bee. Each bee (node) has a specific job, like sensing or moving, and they talk to each other to get things done for the robot hive (your robot project).
+
+### ADDING CUSTOM MODELS TO GAZEBO
 Integrate custom models into your Gazebo simulations by following these steps:
 
  ![Alt text](Readme/ske.gif)
@@ -60,31 +68,30 @@ Integrate custom models into your Gazebo simulations by following these steps:
  ls ~/.gazebo/models/
  ```
  The output should list the custom model names.
-### Launching the Simulation
+ 
+### LAUNCHING THE SIMULATION
 Start the simulation by executing these commands:
 1. **Gazebo World Launch**:
-
- ![Alt text](Readme/uniCampus3dgazebo.gif)
-
- Initiate the Unicampus Gazebo world along with the Jackal robot:
+ Initiates the Unicampus Gazebo world along with the Jackal robot equipped with a Fornt Laser:
  ```bash
  export JACKAL_LASER=1
  roslaunch unicampus unicampus.launch
  ```
+ ![Alt text](Readme/uniCampus3dgazebo.gif)
+
 2. **RViz Visualization**:
  To visualize the robot and its sensor data in RViz:
  ```bash
  roslaunch jackal_viz view_robot.launch
  ```
 
-### Optional: Installing teleop_twist_keyboard
+### OPTIONAL: INSTALLING TELEOP_TWIST KEYBOARD:
 For enhanced control of your robot in the simulation, you may opt to install the
 `teleop_twist_keyboard` package. This package allows you to control the robot's movement using
 your keyboard's arrow keys.
 #### Update Your Package List
 First, make sure you have the latest information about available packages:
 ```bash
-
 sudo apt-get update
 ```
 #### Install the teleop_twist_keyboard Package
@@ -94,7 +101,6 @@ Depending on your version of ROS, use one of the following commands:
  ```bash
  sudo apt-get install ros-noetic-teleop-twist-keyboard
  ```
-
 ##### Using the teleop_twist_keyboard Package
 Once the installation is complete, you can launch the keyboard teleoperation interface:
 ```bash
@@ -104,7 +110,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 Make sure you have the ROS environment properly sourced in your terminal before running the
 `rosrun` command.
-## Comprehensive Guide to Map Generation and Saving in Custom Unicampus World with Jackal Robot
+## COMPREHENSIVE GUIDE TO MAP GENERATION AND SAVING IN CUSTOM UNICAMPUS WORLD WITH JACKAL ROBOT
 ### Overview
 This document provides an in-depth guide to generating and saving maps in a custom Unicampus Gazebo Simulation using the Jackal robot. It is specifically tailored for the ROS package `unicampus` and the launch file `unicampus.launch`.
 ### Understanding ROS Command Syntax
@@ -119,12 +125,12 @@ ROS (Robot Operating System) provides a flexible framework for writing robot sof
  roslaunch unicampus unicampus.launch
  ```
 - **Purpose:** Initializes the Gazebo simulation with the Jackal robot within the custom Unicampus environment.
-#### 2. Launch the Gmapping for SLAM (Simultaneous Localization and Mapping)
+#### 2. Launch the Gmapping for SLAM (Simultaneous Localization and Mapping) 
 - **Command:** 
  ```
  roslaunch jackal_navigation gmapping_demo.launch
  ```
-- **Purpose:** Gmapping provides SLAM capabilities, crucial for autonomous mapping. It processes the robot's laser scans and odometry to construct a 2D map of the environment.
+- **Purpose:** Gmapping provides SLAM capabilities, crucial for autonomous mapping. It processes the robot's laser scans and odometry to construct a 2D map of the environment.SLAM (Simultaneous Localization and Mapping) in gmapping is a technique where a robot builds a map of its environment while simultaneously determining its own position within that map, allowing it to navigate in unknown spaces.
 #### 3. Visualize in RViz
 - **Command:** 
  ```
@@ -164,6 +170,7 @@ Cartographer is another SLAM solution that can be used for map generation in ROS
 - Map quality is highly dependent on the coverage of the robot's exploration and sensor accuracy.
 ### Conclusion
 Mapping in a robotic simulation environment is a crucial step in the development of autonomous navigation systems. By following the steps outlined in this guide, users can effectively generate and save maps of their custom Unicampus environments, utilizing either Gmapping or Cartographer for SLAM."
+
 ### Deliberative Navigation with AMCL Demo
 For AMCL-based navigation (requires a pre-existing map):
 ```bash
