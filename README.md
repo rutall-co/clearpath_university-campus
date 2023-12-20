@@ -235,20 +235,45 @@ This project is licensed under the MIT License. For more details, refer to the L
 
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
 
 
 
-<p align="center">
-  <span style="font-size: 20px; font-weight: bold;">From <i>\( \pi \)</i> to <i>\( \phi \)</i>, in the algorithmic sky</span><br>
-  <span style="font-size: 24px; font-weight: bold;">Our robot does fly</span>
-</p>
+
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .heavy { font:bold 24px sans-serif; }
+    .italic { font:italic 20px sans-serif; }
+  </style>
+  <text x="50%" y="50" class="italic" text-anchor="middle">From π to φ,</text>
+  <text x="50%" y="70" class="heavy" text-anchor="middle">in the algorithmic sky 🚀</text>
+  <text x="50%" y="100" class="heavy" text-anchor="middle">OUR ROBOT DOES FLY</text>
+</svg>
 
 
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
