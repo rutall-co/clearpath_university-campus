@@ -266,10 +266,23 @@ This project is licensed under the MIT License. For more details, refer to the L
 <br>
 <br>
 <br>
-
-
-
-
+<p align="center">
+  <span style="font-size: 44px; font-weight: bold;"> LIMITED TIME ONLY: Get 50% OFF on GitHub Repos!</span><br>
+ <span style="font-size: 33px; font-weight: bold;"> Offer valid till January 1st,</span><br>
+  <span style="font-size: 50px; font-weight: bold;"> or until you start asking the REALLY TOUGH QUESTIONS</span>
+</p>
+<span style="font-size: 33px; font-weight: bold;"> whichever comes first!</span>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
