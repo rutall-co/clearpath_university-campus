@@ -236,28 +236,7 @@ This project is licensed under the MIT License. For more details, refer to the L
 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!---
 
-<br>
-<br>
-
-
-
-
-
-<p align="center">
-  <span style="font-size: 30px; font-weight: bold;"> ### From π to φ, in the algorithmic sky</span><br>
-  <span style="font-size: 44px; font-weight: bold;"> # Our robot does fly</span>
-</p>
-
---->
 
 <br>
 <br>
@@ -289,7 +268,21 @@ This project is licensed under the MIT License. For more details, refer to the L
 <br>
 <br>
 <br>
+<!---
 
+<br>
+<br>
+
+
+
+
+
+<p align="center">
+  <span style="font-size: 30px; font-weight: bold;"> ### From π to φ, in the algorithmic sky</span><br>
+  <span style="font-size: 44px; font-weight: bold;"> # Our robot does fly</span>
+</p>
+
+--->
 
 
 
