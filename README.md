@@ -229,8 +229,7 @@ Your contributions to this project are highly appreciated. To contribute:
 2. Make your changes or enhancements.
 3. Submit a pull request for review.
 ### License
-This project is licensed under the MIT License. For more details, refer to the LICENSE file in this repository
-
+This project is licensed under the MIT License. For more details, contact the owner of the repo wlaa41
 
 
 
