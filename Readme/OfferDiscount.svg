@@ -2,7 +2,7 @@
     <svg viewBox="-30 0 225 70"  
         xmlns="http://www.w3.org/2000/svg">
         <style>
-            @keyframes pulswhite{0%{fill:rgb(223,223,223)}100%{fill:#767676 }}
+            @keyframes pulswhite{0%{fill:rgb(213,213,213)}100%{fill:#cbcbcb }}
             .small{
                 font:lighter 6px sans-serif;
                 animation:pulswhite 9s alternate infinite;
@@ -18,7 +18,7 @@
                 animation:pulswhite 11s alternate infinite;letter-spacing:00px}
             .heavy{
                 font:bold 12px sans-serif;
-                animation:pulswhite 5s alternate infinite}
+                fill:#ffffff;
             .mid{font:bold 21px sans-serif;
                 animation:pulswhite 14s alternate infinite}
             .flip{font:bold 11px sans-serif;
@@ -27,11 +27,11 @@
                 writing-mode:vertical-lr;
                 letter-spacing:-.4px}
         </style>
-            <text x="20" y="35" class="small">LIMITED TIME ONLY: Get</text>
-            <text x="83" y="35" class="heavy">50%</text> 
-            <text x="109" y="35" class="small"> OFF on GitHub Repos!</text>
-            <text x="62" y="43" class="xxsmall">Offer valid till January 1st</text> 
-            <text x="0" y="51" class="xsmall2">OR until you start asking the REALLY TOUGH QUESTIONS</text> 
-            <text x="56" y="59" class="xsmall">whichever comes first!</text> 
+            <text x="10" y="35" class="small">LIMITED TIME ONLY: Get</text>
+            <text x="73" y="35" class="heavy">50%</text> 
+            <text x="99" y="35" class="small"> OFF on GitHub Repos!</text>
+            <text x="52" y="43" class="xxsmall">Offer valid till January 1st</text> 
+            <text x="-10" y="51" class="xsmall2">OR until you start asking the REALLY TOUGH QUESTIONS</text> 
+            <text x="46" y="59" class="xsmall">whichever comes first!</text> 
 
     </svg>
