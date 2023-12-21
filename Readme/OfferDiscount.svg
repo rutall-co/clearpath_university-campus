@@ -8,7 +8,7 @@
                 animation:pulswhite 9s alternate infinite;
                 letter-spacing:-.4px}
             .xsmall{
-                font:7px sans-serif;
+                font:bold 7px sans-serif;
                 animation:pulswhite 6s alternate infinite}
             .xsmall2{
                 font:7px sans-serif;
@@ -32,6 +32,6 @@
             <text x="99" y="35" class="small"> OFF on GitHub Repos!</text>
             <text x="52" y="43" class="xxsmall">Offer valid till January 1st</text> 
             <text x="-10" y="51" class="xsmall2">OR until you start asking the REALLY TOUGH QUESTIONS</text> 
-            <text x="46" y="59" class="xsmall">whichever comes first!</text> 
+            <text x="41" y="59" class="xsmall">whichever comes first!</text> 
 
     </svg>
