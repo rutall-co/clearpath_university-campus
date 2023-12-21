@@ -2,14 +2,14 @@
     <svg viewBox="-30 0 225 70"  
         xmlns="http://www.w3.org/2000/svg">
         <style>
-            @keyframes pulswhite{0%{fill:rgb(213,213,213)}100%{fill:#cbcbcb }}
+            @keyframes pulswhite{0%{fill:rgb(213,213,213)}100%{fill:#a4a4a4 }}
             .small{
                 font:lighter 6px sans-serif;
                 animation:pulswhite 9s alternate infinite;
                 letter-spacing:-.4px}
             .xsmall{
                 font:bold 7px sans-serif;
-                animation:pulswhite 6s alternate infinite}
+                fill:#ffffff;}
             .xsmall2{
                 font:7px sans-serif;
                 animation:pulswhite 4s alternate infinite}
@@ -17,7 +17,7 @@
                 font: 5px sans-serif;
                 animation:pulswhite 11s alternate infinite;letter-spacing:00px}
             .heavy{
-                font:bold 12px sans-serif;
+                font:bold 12.7px sans-serif;
                 fill:#ffffff;
             .mid{font:bold 21px sans-serif;
                 animation:pulswhite 14s alternate infinite}
